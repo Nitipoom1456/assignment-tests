@@ -1,0 +1,12 @@
+url: https://the-internet.herokuapp.com/login
+browser: chrome
+account_name: nottyo
+explicit_timeout: 10s
+
+#api
+api: https://reqres.in/api/users/12 
+
+#chrome_options
+chrome_options:
+  - --headless
+  - --disable-gpu
