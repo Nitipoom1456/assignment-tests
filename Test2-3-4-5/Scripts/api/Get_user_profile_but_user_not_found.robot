@@ -11,7 +11,7 @@ Get_user_profile_but_user_not_found
     ...                 Expected Result:
     ...                     1. Verify response status code should be ‘404’. 
     ...                     2. Response body should be '{}' 
-    [Tags]    Get   Success
+    [Tags]    api   Get   Success
     ${response}=    GET    ${Get_user_profile_but_user_not_found['url']}  expected_status=${Get_user_profile_but_user_not_found['expected_status']}
     ${response_body}=    Set Variable    ${response.json()}
     Should Be Equal As Strings    ${response_body}    ${Get_user_profile_but_user_not_found['response']}

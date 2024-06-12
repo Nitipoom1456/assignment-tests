@@ -10,7 +10,7 @@ Get_user_profile_success
     ...                 Expected Result:
     ...                     1. Verify response status code should be ‘200’ 
     ...                     2. Compare the response body with expected below. ‘ID’ == 12 ‘Email’ == rachel.howell@reqres.in ‘First Name’ == Rachel ‘Last Name’ == Howell ‘Avatar’ == https://reqres.in/img/faces/12image.jpg
-    [Tags]    Get   Success
+    [Tags]    api   Get   Success
     ${response}=    GET    ${Get_user_profile_success['url']}
     HTTP Response Status Code Should Be 200 OK  ${response}
     ${response_body}=    Set Variable    ${response.json()}
