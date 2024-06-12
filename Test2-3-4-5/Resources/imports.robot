@@ -1,5 +1,5 @@
 *** Settings ***
-Library     Selenium2Library
+Library     SeleniumLibrary
 Library     RequestsLibrary
 Resource    ../Keywords/web/web_imports.robot
 Resource    ../Keywords/api/api_imports.robot

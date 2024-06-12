@@ -1,7 +1,3 @@
-// const simpleCipher(encrypted, k) {
-
-// }
-
 let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let solve = "VTAOG";
 

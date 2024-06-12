@@ -1,0 +1,12 @@
+Get_user_profile_success:
+  url: "https://reqres.in/api/users/12"
+  userId: 12
+  email: "rachel.howell@reqres.in"
+  first_name: "Rachel"
+  last_name: "Howell"
+  avatar: "https://reqres.in/img/faces/12-image.jpg"
+
+Get_user_profile_but_user_not_found:
+  url: "https://reqres.in/api/users/1234"
+  response: {}
+  expected_status: "404"

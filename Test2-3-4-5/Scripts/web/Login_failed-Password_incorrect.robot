@@ -1,5 +1,5 @@
 *** Settings ***
-Library    Selenium2Library
+Resource    ../../Resources/imports.robot
 
 *** Variables ***
 
