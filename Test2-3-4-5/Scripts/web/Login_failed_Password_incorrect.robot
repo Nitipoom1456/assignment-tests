@@ -1,14 +1,9 @@
 *** Settings ***
 Resource    ../../Resources/imports.robot
-
-*** Variables ***
-
-
-*** Keywords ***
-
+Variables    ../../Test_data/web/testdata.yaml
 
 *** Test Cases ***
-Login_failed-Password_incorrect
+Login_failed_Password_incorrect
     [Documentation]     To verify that users can login unsuccessfully when they input a correct username but wrong password.
     ...                 Test Steps:
     ...                     1. Open browser and go to 'http://theinternet.herokuapp.com/login'.  
@@ -17,12 +12,10 @@ Login_failed-Password_incorrect
     ...                     1. Login page is shown.  
     ...                     2. Login failed and the message 'Your password is invalid!' is shown.
     [Tags]    login   failed
-    Open Browser    http://the-internet.herokuapp.com/login    chrome
-    Wait Until Page Contains Element    xpath=//h2[text()='Login Page']
-    Input Text    id=username    tomsmith
-    Input Text    id=password    Password!
-    Click Button    xpath=//button[@type='submit']
-    Wait Until Page Contains Element    id=flash
-    Page Should Contain    Your password is invalid!
-    Wait Until Page Contains Element    xpath=//h2[text()='Login Page']
+    Open browser to url   ${base_url}   ${default_browser}
+    Verify login page is displayed
+    Input username    ${Login_failed_Password_incorrect['username']}
+    Input password    ${Login_failed_Password_incorrect['password']}
+    Click login button
+    Verify message Your password is invalid! is displayed
 

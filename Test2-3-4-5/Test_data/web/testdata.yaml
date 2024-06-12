@@ -1,0 +1,14 @@
+base_url: "http://the-internet.herokuapp.com/login"
+default_browser: "chrome"
+
+Login_success:
+  username: "tomsmith"
+  password: "SuperSecretPassword!"
+
+Login_failed_Password_incorrect:
+  username: "tomsmith"
+  password: "Password!"
+
+Login_failed_Username_not_found:
+  username: "tomholland"
+  password: "Password!"
