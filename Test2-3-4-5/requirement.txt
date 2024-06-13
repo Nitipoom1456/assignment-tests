@@ -1,7 +1,7 @@
 pyyaml==6.0.1
 robotframework==7.0.1
-robotframework-seleniumlibrary==6.4.0
-robotframework-selenium2library==3.0.0
-robotframework-requests==0.9.7
-requests==2.32.3
+robotframework-seleniumlibrary==6.3.0
+robotframework-appiumlibrary
+requests
+robotframework-requests
 RESTinstance==1.0.0b14

@@ -12,6 +12,7 @@ Login_failed_Password_incorrect
     ...                     1. Login page is shown.  
     ...                     2. Login failed and the message 'Your password is invalid!' is shown.
     [Tags]    login   failed
+    Set Library Search Order   SeleniumLibrary
     Open browser to url   ${base_url}   ${default_browser}
     Verify login page is displayed
     Input username    ${Login_failed_Password_incorrect['username']}

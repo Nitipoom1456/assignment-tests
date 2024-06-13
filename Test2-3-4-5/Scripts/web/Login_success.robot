@@ -14,6 +14,7 @@ Login_success
     ...                     2. Login success and message 'You logged into a secure area!' is shown.  
     ...                     3. Go back to the Login page and the message 'You logged out of the secure area!' is shown. 
     [Tags]    login     success
+    Set Library Search Order   SeleniumLibrary
     Open browser to url   ${base_url}   ${default_browser}
     Verify login page is displayed
     Input username    ${Login_success['username']}
